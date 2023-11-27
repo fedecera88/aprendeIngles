@@ -160,13 +160,15 @@ header img{
 
 .caracteristicas{
     text-align: center;
-    line-height: 2;
+    line-height: 3;
+    height: 100vh;
 }
 
 .caracteristicas li{
     font-size: 1.5rem;
     margin: 15px 0px;
     list-style: none;
+    padding-top: 50px;
 }
 
 .formulario{
@@ -198,18 +200,14 @@ header img{
     border: black 1px solid;
 }
 
-footer {
+  footer{
     padding-top: 20px;
     width: 100%;
     font-size: 1.50rem;
     background-color: rgb(245, 245, 245);
+    display: inline-block;
     text-align: center;
-    position: fixed;
-    bottom: 0; 
-    left: 0;
-    right: 0;
 }
-
 
 footer p{
     padding-top: 10px;
@@ -311,7 +309,8 @@ footer p{
     }
     
     .formulario{
-        height: 77vh;
+        padding-top: 100px;
+        height: 100vh;
     }
     
 }
