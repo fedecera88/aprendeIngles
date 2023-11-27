@@ -12,11 +12,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.container{
-    max-width: 1400px;
-    margin: auto;
-}
-
 header{
     background-color: rgb(245,245,245);
     display: flex;
@@ -41,7 +36,7 @@ header img{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height:100vh;
+    height:80vh;
     color: white;
     background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/fondo.jpg");
     background-repeat: no-repeat;
@@ -156,30 +151,29 @@ header img{
     background-color:#0876c4;
 }
 
-.container h1{
+.caracteristicas h1{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-top: 30px;
     font-weight: bold;
 }
 
-.container .caracteristicas{
-    height: 60vh;
+.caracteristicas{
+    height: 72vh;
     text-align: center;
-    line-height: 3;
+    line-height: 2;
 }
 
-.container .caracteristicas li{
-    font-size: 2rem;
+.caracteristicas li{
+    font-size: 1.5rem;
     margin: 15px 0px;
-    font-weight: bold;
     list-style: none;
 }
 
 .formulario{
     text-align: center;
-    border-radius: 2%;
     width: 400px;
+    height: 75vh;
     margin: 0 auto;
 }
 
@@ -228,23 +222,21 @@ footer p{
 }
 
 @media (min-width: 720px){
-    .container header{
+    header{
         flex-direction: row;
         justify-content: space-between;
-    }
-
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 30px;
     }
 
     header img{
         width: 40%;
     }
     
-    header ul li a{
-        font-size: 1.5rem;
+    .nav-estilo{
+        font-size: 2rem;
+    }
+
+    .cartel {
+        height: 77vh;
     }
   
     .cartel h1{
@@ -293,12 +285,13 @@ footer p{
     .clases h3{
     font-size: 3rem;
     margin-top: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-weight: bold;
     }
     
     .clases p{
     display: list-item;
+    text-align: center;
     font-size: 1.5rem;
     line-height: 2;
     }
@@ -306,15 +299,26 @@ footer p{
     .boton{
     display: none;
     }
-    
-    .container .caracteristicas li{
-        font-size: 2rem;
-    }
-    
-    .container .caracteristicas{
-        height: 70vh;  
+
+    .caracteristicas{
+        height: 75vh;
+        line-height: 3;
     }
 
+    .caracteristicas h1{
+        font-size: 3rem;
+    }
+
+    .caracteristicas li{
+        font-size: 2rem;
+        margin: 15px 0px;
+        list-style: none;
+    }
+    
+    .formulario{
+        height: 77vh;
+    }
+    
 }
 
 
