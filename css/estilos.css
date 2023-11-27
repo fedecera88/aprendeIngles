@@ -199,6 +199,7 @@ header img{
 }
 
   footer{
+    padding-top: 20px;
     width: 100%;
     font-size: 1.50rem;
     background-color: rgb(245, 245, 245);
@@ -231,7 +232,7 @@ footer p{
     .cartel h1{
         font-size: 7em;
     }
-    .container .somos{
+    .somos{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -291,7 +292,8 @@ footer p{
 
     .caracteristicas{
         height: 75vh;
-        line-height: 3;
+        line-height: 2;
+        padding: 20px;
     }
 
     .caracteristicas h1{
