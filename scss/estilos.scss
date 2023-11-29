@@ -1,0 +1,118 @@
+@import "reset";
+@import "estiloInicial";
+
+
+header{
+    background-color: rgb(245,245,245);
+    display: flex;
+    flex-direction: column;
+    img{
+        margin: 10px;
+    }
+    .custom-navbar-style {
+        background-color: rgb(245, 245, 245);
+    }
+    .nav-estilo{
+        font-size: 1.10rem;
+        padding: 2px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;    
+    }
+}
+
+main{
+    .cartel{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height:100vh;
+        color: white;
+        background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/fondo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        h1{
+            font-size: 4em;
+        }
+        .botonA{
+            font-size: 2rem;
+            color: white;
+            background-color: #00487b;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 30px;
+            margin: 30px;
+            border-style: solid;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            &:hover{
+                background-color:#0876c4;
+            }
+        }
+    }
+    .somos{
+        font-size: 1.50em;
+        text-align: center;
+        padding: 15px 12px;
+        margin-bottom: 15px;
+        h1{
+            text-align: center;
+            font-size: 3rem;
+            margin: 15px;
+            font-weight: bold;}
+        span{
+            color: #0876c4;
+            }
+        p{
+            font-size: 1.5rem;
+            padding: 10px;
+            line-height: 2;}
+        
+    }
+    .clases{
+        margin: 10px auto;
+        text-align: center;
+        color: white;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "claseN"
+            "claseA"
+            "claseC";
+        }
+        h1{
+            padding: 25px 0px;
+            font-size: 1.75em;
+            margin: 30px;
+        }
+        p{
+            display: none;
+        }
+        .claseN{
+            background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/clasesNiños.png");
+            background-size: cover;
+            background-position: center center;
+            border-radius: 15px
+        }
+        .claseA{
+            background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/clasesAdultos.jpg");
+            background-size: cover;
+            background-position: center center;
+            border-radius: 15px
+        }
+        .claseC{
+            background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/clasesConversacion.jpeg");
+            background-size: cover;
+            background-position: center center;
+            border-radius: 15px
+        }
+        @import "botonP";
+}
