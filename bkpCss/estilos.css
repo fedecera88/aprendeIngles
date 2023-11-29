@@ -168,21 +168,13 @@ header img{
     flex-direction: column;
     text-align: start;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    line-height: 2.5;
 }
 
 .caracteristicas li{
     font-size: 1.5rem;
     margin: 15px 0px;
     list-style: none;
-}
-
-.caracteristicas p{
-    font-size: 1rem;
-    margin-left: 40px;
-    font-style: italic;
+    padding-top: 50px;
 }
 
 .formulario{
@@ -219,14 +211,20 @@ header img{
     margin: 15px;
 }
 
-footer {
-    padding: 10px;
+
+
+  footer{
     width: 100%;
-    background-color: rgb(245, 245, 245);
-    color: black;
+    background-color: black;
     font-size: 1.25rem;
+    background-color: rgb(245, 245, 245);
+    display: inline-block;
     text-align: center;
-  }
+}
+
+footer p{
+    padding-top: 10px;
+}
 
 @media (min-width: 720px){
     header{
@@ -306,26 +304,21 @@ footer {
     .boton{
     display: none;
     }
-    
-    
+
     .caracteristicas{
-        height: 20wh;
+        height: 100vh;
+        padding: 20px;
         line-height: 2;
     }
-
 
     .caracteristicas h1{
         font-size: 3rem;
     }
 
     .caracteristicas li{
-        font-size: 3rem;
+        font-size: 2rem;
         margin: 15px 0px;
         list-style: none;
-    }
-
-    .caracteristicas p{
-        font-size: 1.5rem;
     }
     
     .formulario {
