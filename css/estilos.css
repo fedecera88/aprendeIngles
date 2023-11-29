@@ -22,12 +22,17 @@ header img{
     margin: 10px;
 }
 
+.custom-navbar-style {
+    background-color: rgb(245, 245, 245);
+}
+
+
 .nav-estilo{
     font-size: 1.10rem;
     padding: 2px;
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: black;    
 }
 
 .cartel{
@@ -159,9 +164,10 @@ header img{
 }
 
 .caracteristicas{
-    text-align: center;
-    line-height: 3;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: center;
 }
 
 .caracteristicas li{
@@ -172,16 +178,17 @@ header img{
 }
 
 .formulario{
+    display: flex;
+    margin: 15px;
+    flex-direction: column;
     text-align: center;
-    width: 400px;
-    height: 75vh;
-    margin: 0 auto;
 }
 
 .formulario h1{
     font-weight: bold;
     font-size: 2rem;
     padding: 10px;
+    
 }
 
 .lbl{
@@ -191,19 +198,25 @@ header img{
     margin: 0 auto;
 }
 
+.area{
+    border: black 1px solid;
+}
+
+.areaComentario{
+    border: black 1px solid;
+}
+
 .bContacto{
     font-size: 1.5rem;
     margin: 15px;
 }
 
-.area{
-    border: black 1px solid;
-}
+
 
   footer{
-    padding-top: 20px;
     width: 100%;
-    font-size: 1.50rem;
+    background-color: black;
+    font-size: 1.25rem;
     background-color: rgb(245, 245, 245);
     display: inline-block;
     text-align: center;
@@ -224,7 +237,7 @@ footer p{
     }
     
     .nav-estilo{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .cartel {
@@ -308,11 +321,21 @@ footer p{
         list-style: none;
     }
     
-    .formulario{
-        padding-top: 100px;
-        height: 100vh;
-    }
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
     
+    .area{
+        width: 300px;
+    }
+    .areaComentario{
+        width: 600px;
+    }
+      
+   
 }
 
 
