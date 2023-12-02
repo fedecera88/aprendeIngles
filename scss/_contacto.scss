@@ -26,10 +26,16 @@
 }
 
 @media (min-width: 768px) {
-  body {
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 100%;
-    min-height: 100vh;
+  .area {
+    margin: 10px auto;
+    width: 25vw;
+  }
+  .areaComentario {
+    width: 35vw;
+    margin: 10px auto;
+  }
+  .bContacto {
+    margin: 25px auto;
+    font-size: 5rem;
   }
 }
-

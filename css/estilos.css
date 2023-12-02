@@ -270,10 +270,43 @@ p {
 }
 
 @media (min-width: 768px) {
-  body {
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 100%;
-    min-height: 100vh;
+  .area {
+    margin: 10px auto;
+    width: 25vw;
+  }
+  .areaComentario {
+    width: 35vw;
+    margin: 10px auto;
+  }
+  .bContacto {
+    margin: 25px auto;
+    font-size: 5rem;
+  }
+}
+.whatsapp-button {
+  position: fixed;
+  bottom: 100px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+.whatsapp-button:hover {
+  transform: scale(1.5, 1.5);
+}
+.whatsapp-button img {
+  width: 50px;
+}
+
+@media (min-width: 768px) {
+  .whatsapp-button {
+    right: 80px;
+    margin-bottom: 10px;
+  }
+  .whatsapp-button img {
+    width: 80px;
   }
 }
 footer {
