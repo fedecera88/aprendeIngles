@@ -1,0 +1,35 @@
+.formulario {
+  display: flex;
+  margin: 15px;
+  flex-direction: column;
+  text-align: center;
+  h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 15px;
+  }
+  .lbl {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  .area {
+    border: black 1px solid;
+  }
+  .areaComentario {
+    border: black 1px solid;
+  }
+  .bContacto {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+  }
+}
+

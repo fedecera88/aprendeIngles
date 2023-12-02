@@ -11,6 +11,10 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100vh;
 }
 
 header {
@@ -137,14 +141,18 @@ header .custom-navbar-style .nav-estilo {
   grid-auto-flow: row;
   grid-template-areas: "claseN" "claseA" "claseC";
 }
-.clases h1, .clases h2, .clases h3 {
+.clases h1,
+.clases h2,
+.clases h3 {
   padding: 25px 0px;
   font-size: 1.75em;
   margin: 30px;
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(228, 224, 224, 0.3);
 }
-.clases #textoNinos, .clases #textoAdultos, .clases #textoConv {
+.clases #textoNinos,
+.clases #textoAdultos,
+.clases #textoConv {
   display: none;
 }
 .clases .claseN {
@@ -178,14 +186,18 @@ header .custom-navbar-style .nav-estilo {
     grid-auto-flow: row;
     grid-template-areas: "claseN claseA claseC" "claseN claseA claseC" "claseN claseA claseC";
   }
-  .clases h1, .clases h2, .clases h3 {
+  .clases h1,
+  .clases h2,
+  .clases h3 {
     font-size: 3rem;
     margin-top: 30px;
     margin-bottom: 50px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(228, 224, 224, 0.3);
   }
-  .clases #textoNinos, .clases #textoAdultos, .clases #textoConv {
+  .clases #textoNinos,
+  .clases #textoAdultos,
+  .clases #textoConv {
     display: list-item;
     text-align: center;
     font-size: 1.5rem;
@@ -216,7 +228,7 @@ header .custom-navbar-style .nav-estilo {
 h1 {
   font-weight: bold;
   font-size: 2rem;
-  padding: 15px;
+  padding-top: 15px;
   text-align: center;
 }
 
@@ -257,6 +269,13 @@ p {
   font-size: 1.5rem;
 }
 
+@media (min-width: 768px) {
+  body {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+  }
+}
 footer {
   padding: 10px;
   width: 100%;

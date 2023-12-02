@@ -1,348 +1,360 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-header{
-    background-color: rgb(245,245,245);
-    display: flex;
-    flex-direction: column;
+header {
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  flex-direction: column;
 }
 
-header img{
-    margin: 10px;
+header img {
+  margin: 10px;
 }
 
 .custom-navbar-style {
-    background-color: rgb(245, 245, 245);
+  background-color: rgb(245, 245, 245);
 }
 
-.nav-estilo{
-    font-size: 1.10rem;
-    padding: 2px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;    
+.nav-estilo {
+  font-size: 1.1rem;
+  padding: 2px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
 }
 
-.cartel{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height:100vh;
-    color: white;
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+.cartel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
-.cartel h1{
-    font-size: 4em;
+.cartel h1 {
+  font-size: 4em;
 }
 
-.botonA{
-    font-size: 2rem;
-    color: white;
-    background-color: #00487b;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 30px;
-    margin: 30px;
-    border-style: solid;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+.botonA {
+  font-size: 2rem;
+  color: white;
+  background-color: #00487b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin: 30px;
+  border-style: solid;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.botonA:hover{
-    background-color:#0876c4;
+.botonA:hover {
+  background-color: #0876c4;
 }
 
-.somos{
-    font-size: 1.50em;
-    text-align: center;
-    padding: 15px 12px;
-    margin-bottom: 15px;
+.somos {
+  font-size: 1.5em;
+  text-align: center;
+  padding: 15px 12px;
+  margin-bottom: 15px;
 }
-.somos h1{
-    text-align: center;
-    font-size: 3rem;
-    margin: 15px;
-    font-weight: bold;
+.somos h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 15px;
+  font-weight: bold;
 }
-.somos span{
-    color: #0876c4;
+.somos span {
+  color: #0876c4;
 }
-.somos p{
-    font-size: 1.5rem;
-    padding: 10px;
-    line-height: 2;
-}
-
-.clases{
-    margin: 10px auto;
-    text-align: center;
-    color: white;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 5px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "claseN"
-        "claseA"
-        "claseC";
-   }
-
-.clases h1{
-    padding: 25px 0px;
-    font-size: 1.75em;
-    margin: 30px;
+.somos p {
+  font-size: 1.5rem;
+  padding: 10px;
+  line-height: 2;
 }
 
-.clases p{
-    display: none; 
+.clases {
+  margin: 10px auto;
+  text-align: center;
+  color: white;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "claseN"
+    "claseA"
+    "claseC";
 }
 
-.claseN{
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/clasesNiños.png");
-    background-size: cover;
-    background-position: center center;
-    border-radius: 15px
+.clases h1 {
+  padding: 25px 0px;
+  font-size: 1.75em;
+  margin: 30px;
 }
 
-.claseA{
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/clasesAdultos.jpg");
-    background-size: cover;
-    background-position: center center;
-    border-radius: 15px
+.clases p {
+  display: none;
 }
 
-.claseC{
-    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/clasesConversacion.jpeg");
-    background-size: cover;
-    background-position: center center;
-    border-radius: 15px
+.claseN {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/clasesNiños.png");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
 }
 
-.boton{
-    font-size: 1rem;
-    color: white;
-    background-color: #00487b;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 30px;
-    margin: 15px;
-    border-style: solid;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.5);    
+.claseA {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/clasesAdultos.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
 }
 
-.boton:hover{
-    background-color:#0876c4;
+.claseC {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../img/clasesConversacion.jpeg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
 }
 
-.caracteristicas h1{
-    text-align: center;
-    font-size: 2rem;
-    margin-top: 30px;
-    font-weight: bold;
+.boton {
+  font-size: 1rem;
+  color: white;
+  background-color: #00487b;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 30px;
+  margin: 15px;
+  border-style: solid;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.caracteristicas{
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    line-height: 2.5;
+.boton:hover {
+  background-color: #0876c4;
 }
 
-.caracteristicas li{
-    font-size: 1.5rem;
-    margin: 15px 0px;
-    list-style: none;
+.caracteristicas h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 30px;
+  font-weight: bold;
 }
 
-.caracteristicas p{
-    font-size: 1rem;
-    margin-left: 40px;
-    font-style: italic;
+.caracteristicas {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  line-height: 2.5;
 }
 
-.formulario{
-    display: flex;
-    margin: 15px;
-    flex-direction: column;
-    text-align: center;
+.caracteristicas li {
+  font-size: 1.5rem;
+  margin: 15px 0px;
+  list-style: none;
 }
 
-.formulario h1{
-    font-weight: bold;
-    font-size: 2rem;
-    padding: 10px;
-    
+.caracteristicas p {
+  font-size: 1rem;
+  margin-left: 40px;
+  font-style: italic;
 }
 
-.lbl{
-    font-weight: bold;
-    font-size: 1.5rem;
-    padding: 10px;
-    margin: 0 auto;
+.formulario {
+  display: flex;
+  margin: 15px;
+  flex-direction: column;
+  text-align: center;
 }
 
-.area{
-    border: black 1px solid;
+.formulario h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10px;
 }
 
-.areaComentario{
-    border: black 1px solid;
+.lbl {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 10px;
+  margin: 0 auto;
 }
 
-.bContacto{
-    font-size: 1.5rem;
-    margin: 15px;
+.area {
+  border: black 1px solid;
+}
+
+.areaComentario {
+  border: black 1px solid;
+}
+
+.bContacto {
+  font-size: 1.5rem;
+  margin: 15px;
 }
 
 footer {
-    padding: 10px;
-    width: 100%;
-    background-color: rgb(245, 245, 245);
-    color: black;
-    font-size: 1.25rem;
-    text-align: center;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  color: black;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-@media (min-width: 768px){
-    header{
-        flex-direction: row;
-        justify-content: space-between;
-    }
+  header img {
+    width: 40%;
+  }
 
-    header img{
-        width: 40%;
-    }
-    
-    .nav-estilo{
-        font-size: 1.5rem;
-    }
+  .nav-estilo {
+    font-size: 1.5rem;
+  }
 
-    .cartel {
-        height: 77vh;
-    }
-  
-    .cartel h1{
-        font-size: 7em;
-    }
-    .somos{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+  .cartel {
+    height: 77vh;
+  }
 
-    .somos .img-container{
-        height: 500px;
-        width: 700px;
-        background-image: url("../img/aprendeIngles.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
+  .cartel h1 {
+    font-size: 7em;
+  }
+  .somos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-    .somos .texto{
-        width: 100%;
-        max-width: 800px;
-        text-align: initial;
-        padding: 0px 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  .somos .img-container {
+    height: 500px;
+    width: 700px;
+    background-image: url("../img/aprendeIngles.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    .clases{
-        margin: 10px auto;
-        text-align: center;
-        color: white;
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr;
-        grid-template-rows: 2fr;
-        gap: 2px;
-        grid-auto-flow: row;
-        grid-template-areas:
-        "claseN claseA claseC" 
-        "claseN claseA claseC" 
-        "claseN claseA claseC";
-       }
+  .somos .texto {
+    width: 100%;
+    max-width: 800px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .clases h3{
+  .clases {
+    margin: 10px auto;
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr;
+    gap: 2px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "claseN claseA claseC"
+      "claseN claseA claseC"
+      "claseN claseA claseC";
+  }
+
+  .clases h3 {
     font-size: 3rem;
     margin-top: 30px;
     margin-bottom: 50px;
     font-weight: bold;
-    }
-    
-    .clases p{
+  }
+
+  .clases p {
     display: list-item;
     text-align: center;
     font-size: 1.5rem;
     line-height: 2;
-    }
+  }
 
-    .boton{
+  .boton {
     display: none;
-    }
-    
-    
-    .caracteristicas{
-        height: 20wh;
-        line-height: 2;
-    }
+  }
 
+  .caracteristicas {
+    height: 20wh;
+    line-height: 2;
+  }
 
-    .caracteristicas h1{
-        font-size: 3rem;
-    }
+  .caracteristicas h1 {
+    font-size: 3rem;
+  }
 
-    .caracteristicas li{
-        font-size: 3rem;
-        margin: 15px 0px;
-        list-style: none;
-    }
+  .caracteristicas li {
+    font-size: 3rem;
+    margin: 15px 0px;
+    list-style: none;
+  }
 
-    .caracteristicas p{
-        font-size: 1.5rem;
-    }
-    
-    .formulario {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    
-    .area{
-        width: 300px;
-    }
-    .areaComentario{
-        width: 600px;
-    }
-      
-   
+  .caracteristicas p {
+    font-size: 1.5rem;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .area {
+    width: 300px;
+  }
+  .areaComentario {
+    width: 600px;
+  }
 }
-
-
-

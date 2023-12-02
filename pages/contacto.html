@@ -41,20 +41,22 @@
     <Main>
         <div class="formulario">
             <h1>Formulario de contacto</h1>
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label lbl">Nombre</label>
-                <input type="text" class="form-control area" id="exampleFormControlInput1" placeholder="Escribí tu nombre">
-            </div>
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="form-label lbl">Correo Electrónico</label>
-                <input type="email" class="form-control area" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-4">
-                <label for="exampleFormControlTextarea1" class="form-label lbl">Dejanos tu comentario</label>
-                <textarea class="form-control areaComentario" id="exampleFormControlTextarea1" rows="15" placeholder="Comentario"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary bContacto">Enviar</button>
-        </div>
+            <form action="" method="post">
+                <div class="mb-4">
+                    <label for="nombre" class="form-label lbl">Nombre</label>
+                    <input type="text" class="form-control area" id="nombre" name="nombre" placeholder="Escribí tu nombre" required>
+                </div>
+                <div class="mb-4">
+                    <label for="correo" class="form-label lbl">Correo Electrónico</label>
+                    <input type="email" class="form-control area" id="correo" name="correo" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-4">
+                    <label for="comentario" class="form-label lbl">Dejanos tu comentario</label>
+                    <textarea class="form-control areaComentario" id="comentario" name="comentario" rows="5" placeholder="Comentario" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary bContacto">Enviar</button>
+            </form>
+        </div>        
     </main>
     <footer>
             <p>&copy;aprendeIngles 2023</p>
