@@ -1,11 +1,10 @@
 .clases {
-  margin: 15px;
+  margin: 10px;
   text-align: center;
   color: white;
-  height: 80vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 3fr 3fr 3fr;
   gap: 2px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -15,8 +14,8 @@
   h1,
   h2,
   h3 {
-    padding: 25px 0px;
-    font-size: 1.75em;
+    padding: 10px 0px;
+    font-size: 1.50rem;
     margin: 30px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(228, 224, 224, 0.3);
@@ -24,7 +23,7 @@
   #textoNinos,
   #textoAdultos,
   #textoConv {
-    display: none;
+    font-size: 1.15rem;
   }
   .claseN {
     background-image: linear-gradient(
@@ -64,6 +63,7 @@
 @media (min-width: 768px) {
   .clases {
     margin: 10px;
+    height: 80vh;
     text-align: center;
     color: white;
     display: grid;
@@ -84,6 +84,9 @@
       font-weight: bold;
       text-shadow: 2px 2px 4px rgba(228, 224, 224, 0.3);
     }
+    .transparencia{
+      background-color: rgba(255, 255, 255, 0);
+    }
     #textoNinos,
     #textoAdultos,
     #textoConv {
@@ -92,9 +95,6 @@
       font-size: 1.5rem;
       line-height: 1.5;
       font-weight: bolder;
-    }
-    .boton {
-      display: none;
     }
   }
 }

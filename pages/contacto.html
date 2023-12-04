@@ -11,8 +11,14 @@
     />
     <link rel="stylesheet" href="../css/estilos.css" />
     <title>Aprendé Inglés - Contacto</title>
-    <meta name="description" content="Ponete en contacto con aprendé inglés y empezá cuanto antes">
-    <meta name="keywords" content="aprende, inglés,fácil, rápido, online, contacto, WhatsApp, correo">
+    <meta
+      name="description"
+      content="Ponete en contacto con aprendé inglés y empezá cuanto antes"
+    />
+    <meta
+      name="keywords"
+      content="aprende, inglés,fácil, rápido, online, contacto, WhatsApp, correo"
+    />
   </head>
   <body>
     <header>
@@ -119,13 +125,52 @@
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary bContacto">
+          <button
+            type="button"
+            class="btn btn-primary bContacto"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
             Enviar
           </button>
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Envío de formulario
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">¿Confirmas enviar el formulario?</div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Volver
+                  </button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </form>
       </div>
       <a
-        href="https://wa.me/TUNUMEROTELEFONICO"
+        href="https://wa.me/5491179000050?text=Hola%2C%20me%20pongo%20en%20contacto%20por%20las%20clases%20de%20inglés"
         class="whatsapp-button"
         target="_blank"
       >
