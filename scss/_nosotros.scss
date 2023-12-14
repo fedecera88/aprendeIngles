@@ -15,6 +15,26 @@
     padding: 10px;
     line-height: 2;
   }
+  h5 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 10px;
+  }
+  .equipo {
+    .miembro {
+      text-align: center;
+      img {
+        width: 120px;
+        border-radius: 15px;
+      }
+      p {
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 10px;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -39,5 +59,9 @@
       flex-direction: column;
       justify-content: center;
     }
+    .equipo {
+      display: flex;
+      justify-content: space-between;
   }
+}
 }
