@@ -1,13 +1,12 @@
 .whatsapp-button {
   position: fixed;
-  bottom: 60px;
+  bottom: 100px;
   right: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   transition: transform 0.3s ease;
-
   img {
     width: 50px;
   }
@@ -17,6 +16,9 @@
   .whatsapp-button {
     right: 80px;
     margin-bottom: 40px;
+    &:hover{
+      transform: scale(1.2); 
+    }
     img {
       width: 80px;
     }

@@ -158,6 +158,9 @@ header .custom-navbar-style .nav-estilo {
     display: flex;
     justify-content: space-between;
   }
+  .somos .equipo .miembro:hover {
+    transform: scale(1.3);
+  }
 }
 .clases {
   margin: 10px auto;
@@ -323,7 +326,7 @@ header .custom-navbar-style .nav-estilo {
 }
 .whatsapp-button {
   position: fixed;
-  bottom: 60px;
+  bottom: 100px;
   right: 15px;
   display: flex;
   align-items: center;
@@ -339,6 +342,9 @@ header .custom-navbar-style .nav-estilo {
   .whatsapp-button {
     right: 80px;
     margin-bottom: 40px;
+  }
+  .whatsapp-button:hover {
+    transform: scale(1.2);
   }
   .whatsapp-button img {
     width: 80px;
