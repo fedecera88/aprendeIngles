@@ -1,12 +1,11 @@
 .clases {
-  margin: 10px;
+  margin: 10px auto;
   text-align: center;
   color: white;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 3fr 3fr 3fr;
   gap: 2px;
-  grid-auto-flow: row;
   grid-template-areas:
     "claseN"
     "claseA"
@@ -14,9 +13,8 @@
   h1,
   h2,
   h3 {
-    padding: 10px 0px;
-    font-size: 1.25rem;
-    margin: 30px;
+    margin-top: 10px;
+    font-size: 1.75rem;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(228, 224, 224, 0.3);
   }
@@ -24,6 +22,7 @@
   #textoAdultos,
   #textoConv {
     font-size: 1rem;
+    padding: 5px;
   }
   .claseN {
     grid-area: claseN;
