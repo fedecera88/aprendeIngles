@@ -210,10 +210,10 @@ header .custom-navbar-style .nav-estilo {
 
 @media (min-width: 768px) {
   .clases {
-    margin: 10px;
-    height: 80vh;
+    height: 100%;
     width: 100vw;
     text-align: center;
+    justify-content: center;
     color: white;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
@@ -226,8 +226,7 @@ header .custom-navbar-style .nav-estilo {
   .clases h2,
   .clases h3 {
     font-size: 3rem;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin: 50px;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(228, 224, 224, 0.3);
   }
@@ -237,11 +236,9 @@ header .custom-navbar-style .nav-estilo {
   .clases #textoNinos,
   .clases #textoAdultos,
   .clases #textoConv {
-    display: list-item;
     text-align: center;
     font-size: 1.5rem;
-    line-height: 1.5;
-    font-weight: bolder;
+    margin: auto 20px;
   }
 }
 .boton {
