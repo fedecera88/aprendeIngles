@@ -212,6 +212,7 @@ header .custom-navbar-style .nav-estilo {
   .clases {
     margin: 10px;
     height: 80vh;
+    width: 100vw;
     text-align: center;
     color: white;
     display: grid;
